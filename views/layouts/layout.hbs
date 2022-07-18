@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./stylesheets/style.css">
+
+        <title>Blog Me</title>
+
+    </head>
+    
+    <body>
+        <header id="header" class="fixed-top d-flex justify-content-center align-items-center header-transparent">
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#home">Home</a></li>
+                    <li><a class="nav-link scrollto" href="#dashboard">Dashboard</a></li>
+                    {{#if isLoggedIn}}
+                    <li><a class="nav-link scrollto" href="#logout">Logout</a></li>
+                    {{else}}
+                    <li><a class="nav-link scrollto" href="./login">Login</a></li>
+                    <li><a class="nav-link scrollto" href="./signUp">Sign Up</a></li>
+                    {{/if}}
+                </ul>
+            </nav>
+            <h1>Blog Me!</h1>
+        </header>
+
+      {{{body}}}
+
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

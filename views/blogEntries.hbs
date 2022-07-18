@@ -1,0 +1,33 @@
+<!--
+    blogs: {
+        blogEntries: [
+            {
+                title: "",
+                author: "",
+                createdDate: "",
+                content: ""
+            },
+            {
+                title: "",
+                author: "",
+                createdDate: "",
+                content: ""
+            },
+            {
+                title: "",
+                author: "",
+                createdDate: "",
+                content: ""
+            }
+        ]
+    }
+ -->
+
+        <section>
+            {{#each blogEntries}}
+            <article class="blogPostCard">
+                <div><h2>{{this.title}}</h2> <span>Posted by {{this.author}} on {{this.createdDate}}</span></div>
+                <p>{{this.content}}</p>
+            </article>
+            {{/each}}
+        </section>

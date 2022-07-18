@@ -1,0 +1,22 @@
+<section id="signup">
+    <div id="signUpForm">
+        <div class="container">
+            <h1>Sign Up</h1>
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+
+            <div style="display: none;" id="errorMessage"></div>
+                
+            <label for="username"><b>User Name</b></label>
+            <input class=".required" id="usernameInput" type="text" placeholder="Enter User Name" name="username" required />
+                
+            <label for="psw"><b>Password</b></label>
+            <input class=".required" id="passwordInput" type="password" placeholder="Enter Password" name="psw" required />
+              
+            <button class="signup" onclick="signUp()">Sign Up</button>
+        </div>           
+    </div>
+    <div id="signUpMessage"></div>
+</section>
+
+<script src="./js/signup.js"></script> 
